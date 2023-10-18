@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sample.Abstractions\Sample.Abstractions.csproj" />
+      <ProjectReference Include="..\Sample.Api.Web\Sample.Api.Web.csproj" />
+      <ProjectReference Include="..\Sample.Core\Sample.Core.csproj" />
+      <ProjectReference Include="..\Sample.Persistence\Sample.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
